@@ -7,12 +7,16 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>DIMSVM</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1 className="title">DIMSVM</h1>
-
+        {/* <h1 className="title">DIMSVM</h1> */}
+        <Image
+          priority
+          src="/images/DIMSVM-Logo.png"
+          height={130}
+          width={300}
+        />
         <p className="description">
           <p> Prounced as Dimsum.</p>
           <p> Alfonso & Eric. </p>
