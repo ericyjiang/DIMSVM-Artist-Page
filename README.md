@@ -1,2 +1,1 @@
-# DIMSVM-Artist-Page
-# DIMSVM-Artist-Page
+Start server with npm run dev
