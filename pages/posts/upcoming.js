@@ -12,6 +12,32 @@ export default function FirstPost() {
       <h2>
         <Link href="/"> Back to home</Link>
       </h2>
+
+      <p>
+        Oct. 29, 2022 <br />
+        <b>Gossip 8 </b> <br />
+        Northern Blvd, NY
+      </p>
+
+      <h2> Past Show</h2>
+      <p>
+        July 03, 2020 <br />
+        <b> Vibestream</b> <br />
+        Virtual Live Stream
+      </p>
+
+      <p>
+        Feb. 15, 2020 <br />
+        <b>Topsaa </b> <br />
+        College Point, NY
+      </p>
+
+      <p>
+        June 28, 2019 <br />
+        <b> Meet </b>
+        <br />
+        Flushing, NY
+      </p>
     </Layout>
   );
 }
