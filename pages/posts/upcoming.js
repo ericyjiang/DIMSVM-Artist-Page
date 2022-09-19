@@ -19,7 +19,7 @@ export default function FirstPost() {
         Northern Blvd, NY
       </p>
 
-      <h2> Past Show</h2>
+      <h2> Past Shows </h2>
       <p>
         July 03, 2020 <br />
         <b> Vibestream</b> <br />
