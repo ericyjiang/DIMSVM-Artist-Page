@@ -10,7 +10,6 @@ export default function Home() {
       </Head>
 
       <main>
-        {/* <h1 className="title">DIMSVM</h1> */}
         <Image
           priority
           src="/images/DIMSVM-Logo.png"
@@ -18,40 +17,48 @@ export default function Home() {
           width={300}
         />
         <p className="description">
-          <p> Prounced as Dimsum.</p>
-          <p> Alfonso & Eric. </p>
-          <p>A couple friends, a couple tunes.</p>
+          <p>
+            Prounced as Dimsum <br />
+            Alfonso & Eric <br />
+          </p>
+          <p>A couple friends, a couple tunes </p>
         </p>
 
         <div className="grid">
           <a className="card">
             <Link href="/posts/upcoming">
-              <h3>Upcoming Shows &rarr;</h3>
+              <h3> Upcoming Shows &rarr; </h3>
             </Link>
             <Link href="/posts/upcoming">
-              <p>Get your tickets to our next show</p>
+              <p> Come to our next show </p>
             </Link>
           </a>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3> Merch &rarr;</h3>
-            <p>Get your exclusive DIMSVM merch</p>
+          <a className="card">
+            <Link href="/posts/contact">
+              <h3> Contact Us &rarr; </h3>
+            </Link>
+            <Link href="/posts/contact">
+              <p> Contact for bookings </p>
+            </Link>
           </a>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3> Discography &rarr;</h3>
-            <p> Listen to your favorite tracks</p>
+          <a className="card">
+            <Link href="/posts/discography">
+              <h3> Discography &rarr; </h3>
+            </Link>
+            <Link href="/posts/discography">
+              <p> Listen to your favorite tracks </p>
+            </Link>
           </a>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Press Release &rarr;</h3>
-            <p>Stay up to date with DIMSVM</p>
+          <a className="card">
+            <Link href="/posts/about">
+              <h3> About Us &rarr; </h3>
+            </Link>
+            <Link href="/posts/about">
+              <p> DIMSVM's story </p>
+            </Link>
           </a>
         </div>
       </main>

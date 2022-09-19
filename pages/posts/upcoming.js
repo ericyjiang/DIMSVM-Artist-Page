@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Layout from "../../components/layout";
 
-export default function FirstPost() {
+export default function Upcoming() {
   return (
     <Layout>
       <Head>
@@ -10,7 +10,7 @@ export default function FirstPost() {
       </Head>
       <h1>Upcoming Shows</h1>
       <h2>
-        <Link href="/"> Back to home</Link>
+        <Link href="/"> Back to home </Link>
       </h2>
 
       <p>
