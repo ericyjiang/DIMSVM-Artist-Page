@@ -1,25 +1,26 @@
 html,
 body {
   padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: 1px;
+  font-family:'Montserrat', sans-serif;
   line-height: 1.6;
   font-size: 18px;
+  color: white;
+  background: linear-gradient(181.27deg, #0D0040 0%, #000106 100%);
 }
 
 * {
   box-sizing: border-box;
 }
 
-a {
+/* a {
   color: #0070f3;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-}
+} */
 
 img {
   max-width: 100%;
