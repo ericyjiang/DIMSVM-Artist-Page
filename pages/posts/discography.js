@@ -9,13 +9,12 @@ export default function Discography() {
         <title> Discography </title>
       </Head>
       <h1> Discography </h1>
+      <div>
+        <a href="https://soundcloud.com/dimsvm">SoundCloud</a>
+      </div>
       <h2>
         <Link href="/"> Back to home </Link>
       </h2>
-
-      <p>
-        <b> SPOTIFY/ SOUNDCLOUD PLAYER WILL GO HERE</b>
-      </p>
     </Layout>
   );
 }
