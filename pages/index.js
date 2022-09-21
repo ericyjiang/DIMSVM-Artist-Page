@@ -22,18 +22,16 @@ export default function Home() {
           priority
           src="/images/Duo.png"
           className={utilStyles.borderCircle}
-          height={288}
-          width={288}
+          height={488}
+          width={488}
         />
         <p className={utilStyles.description}>
           <h1> DIMSVM </h1>
+          <p>Producer & DJ duo</p>
           <p>
-            Producer & DJ duo <br />
-          </p>
-          <p>
-            Pronunced as 'dim sum', DIMSVM is a duo act from New York City
+            Pronunced as "dim sum", DIMSVM is a duo act from New York City
             specializing in multiple subgenres of Electronic Dance Music
-            including Dubstep, Trap, House and more.
+            including Dubstep, Trap, House, and more.
           </p>
         </p>
 
