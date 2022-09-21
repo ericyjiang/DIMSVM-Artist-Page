@@ -42,6 +42,58 @@ export default function Home() {
           </p>
         </p>
 
+        <div className={utilStyles.socials}>
+          <a href="https://open.spotify.com/artist/06CnAdKDLvYsj5A8x8BjF7?si=l5AEjToMS9mMtvjMRf7UTQ">
+            <Image
+              priority
+              src="/images/SPOT.png"
+              className={utilStyles.borderCircle}
+              height={48}
+              width={48}
+            />
+          </a>
+
+          <a href="https://soundcloud.com/dimsvm">
+            <Image
+              priority
+              src="/images/SC.png"
+              className={utilStyles.borderCircle}
+              height={48}
+              width={48}
+            />
+          </a>
+
+          <a href="https://www.youtube.com/channel/UCWsAAtpwWOMxJjbZlOqOfQA">
+            <Image
+              priority
+              src="/images/YOU.png"
+              className={utilStyles.borderCircle}
+              height={48}
+              width={48}
+            />
+          </a>
+
+          <a href="https://www.facebook.com/dimsvm.music">
+            <Image
+              priority
+              src="/images/META.png"
+              className={utilStyles.borderCircle}
+              height={48}
+              width={48}
+            />
+          </a>
+
+          <a href="https://www.instagram.com/dimsvm.music/">
+            <Image
+              priority
+              src="/images/IG.png"
+              className={utilStyles.borderCircle}
+              height={48}
+              width={48}
+            />
+          </a>
+        </div>
+
         <div className="grid">
           <a className="card">
             <Link href="/posts/upcoming">
