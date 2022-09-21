@@ -1,27 +1,40 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import utilStyles from "../styles/utils.module.css";
+import Layout from "../components/layout";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className={utilStyles.container}>
       <Head>
         <title>DIMSVM</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <main>
         <Image
           priority
-          src="/images/DIMSVM-Logo.png"
-          height={130}
-          width={300}
+          src="/images/Duo.png"
+          className={utilStyles.borderCircle}
+          height={288}
+          width={288}
         />
-        <p className="description">
+        <p className={utilStyles.description}>
+          <h1> DIMSVM </h1>
           <p>
-            Prounced as Dimsum <br />
-            Alfonso & Eric <br />
+            Producer & DJ duo <br />
           </p>
-          <p>A couple friends, a couple tunes </p>
+          <p>
+            Pronunced as 'dim sum', DIMSVM is a duo act from New York City
+            specializing in multiple subgenres of Electronic Dance Music
+            including Dubstep, Trap, House and more.
+          </p>
         </p>
 
         <div className="grid">
@@ -73,7 +86,7 @@ export default function Home() {
         </a>
       </footer>
 
-      <style jsx>{`
+      {/* <style jsx>{`
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -202,9 +215,9 @@ export default function Home() {
             flex-direction: column;
           }
         }
-      `}</style>
+      `}</style> */}
 
-      <style jsx global>{`
+      {/* <style jsx global>{`
         html,
         body {
           padding: 0;
@@ -217,7 +230,7 @@ export default function Home() {
         * {
           box-sizing: border-box;
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 }
