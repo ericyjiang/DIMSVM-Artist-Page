@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import utilStyles from "../styles/utils.module.css";
 import Layout from "../components/layout";
+import Discography from "./posts/discography";
 
 export default function Home() {
   return (
@@ -114,13 +115,9 @@ export default function Home() {
           </a>
 
           <a className="card">
-            <Link href="/posts/discography">
-              <h3> Discography &rarr; </h3>
-            </Link>
-            <Link href="/posts/discography">
-              <p> Listen to your favorite tracks </p>
-            </Link>
+            <Discography />
           </a>
+          
 
           <a className="card">
             <Link href="/posts/about">
