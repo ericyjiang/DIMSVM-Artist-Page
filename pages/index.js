@@ -30,6 +30,7 @@ export default function Home() {
             className={utilStyles.borderCircle}
             height={288}
             width={288}
+            unoptimized={true}
           />
         </div>
         <p className={utilStyles.description}>
@@ -48,8 +49,9 @@ export default function Home() {
               priority
               src="/images/SPOT.png"
               className={utilStyles.borderCircle}
-              height={48}
-              width={48}
+              height={50}
+              width={50}
+              unoptimized={true}
             />
           </a>
 
@@ -58,18 +60,19 @@ export default function Home() {
               priority
               src="/images/SC.png"
               className={utilStyles.borderCircle}
-              height={48}
-              width={48}
+              height={50}
+              width={50}
+              unoptimized={true}
             />
           </a>
-
           <a href="https://www.youtube.com/channel/UCWsAAtpwWOMxJjbZlOqOfQA">
             <Image
               priority
               src="/images/YOU.png"
               className={utilStyles.borderCircle}
-              height={48}
-              width={48}
+              height={50}
+              width={50}
+              unoptimized={true}
             />
           </a>
 
@@ -80,6 +83,7 @@ export default function Home() {
               className={utilStyles.borderCircle}
               height={48}
               width={48}
+              unoptimized={true}
             />
           </a>
 
@@ -88,8 +92,9 @@ export default function Home() {
               priority
               src="/images/IG.png"
               className={utilStyles.borderCircle}
-              height={48}
-              width={48}
+              height={50}
+              width={50}
+              unoptimized={true}
             />
           </a>
         </div>
