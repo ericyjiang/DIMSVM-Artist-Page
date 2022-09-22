@@ -1,28 +1,98 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import utilStyles from "../styles/utils.module.css";
+import Layout from "../components/layout";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className={utilStyles.container}>
       <Head>
         <title>DIMSVM</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <main>
-        <Image
-          priority
-          src="/images/DIMSVM-Logo.png"
-          height={130}
-          width={300}
-        />
-        <p className="description">
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <Image
+            priority
+            src="/images/Duo.png"
+            className={utilStyles.borderCircle}
+            height={288}
+            width={288}
+          />
+        </div>
+        <p className={utilStyles.description}>
+          <h1 className={utilStyles.h1title}> DIMSVM </h1>
+          <p className={utilStyles.subTitle}>Producer & DJ duo</p>
           <p>
-            Prounced as Dimsum <br />
-            Alfonso & Eric <br />
+            Pronunced as "dim sum", DIMSVM is a duo act from New York City
+            specializing in multiple subgenres of Electronic Dance Music
+            including Dubstep, Trap, House, and more.
           </p>
-          <p>A couple friends, a couple tunes </p>
         </p>
+
+        <div className={utilStyles.socials}>
+          <a href="https://open.spotify.com/artist/06CnAdKDLvYsj5A8x8BjF7?si=l5AEjToMS9mMtvjMRf7UTQ">
+            <Image
+              priority
+              src="/images/SPOT.png"
+              className={utilStyles.borderCircle}
+              height={48}
+              width={48}
+            />
+          </a>
+
+          <a href="https://soundcloud.com/dimsvm">
+            <Image
+              priority
+              src="/images/SC.png"
+              className={utilStyles.borderCircle}
+              height={48}
+              width={48}
+            />
+          </a>
+
+          <a href="https://www.youtube.com/channel/UCWsAAtpwWOMxJjbZlOqOfQA">
+            <Image
+              priority
+              src="/images/YOU.png"
+              className={utilStyles.borderCircle}
+              height={48}
+              width={48}
+            />
+          </a>
+
+          <a href="https://www.facebook.com/dimsvm.music">
+            <Image
+              priority
+              src="/images/META.png"
+              className={utilStyles.borderCircle}
+              height={48}
+              width={48}
+            />
+          </a>
+
+          <a href="https://www.instagram.com/dimsvm.music/">
+            <Image
+              priority
+              src="/images/IG.png"
+              className={utilStyles.borderCircle}
+              height={48}
+              width={48}
+            />
+          </a>
+        </div>
 
         <div className="grid">
           <a className="card">
@@ -63,17 +133,14 @@ export default function Home() {
         </div>
       </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by <img src="/vercel.svg" alt="Vercel" className="logo" />
-        </a>
+      <footer className={utilStyles.footer}>
+        <Link href="/"> Home </Link>
+        <Link href="/posts/discography"> Music </Link>
+        <Link href="/posts/upcoming"> Events </Link>
+        <Link href="/posts/contact"> Contact </Link>
       </footer>
 
-      <style jsx>{`
+      {/* <style jsx>{`
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -202,9 +269,9 @@ export default function Home() {
             flex-direction: column;
           }
         }
-      `}</style>
+      `}</style> */}
 
-      <style jsx global>{`
+      {/* <style jsx global>{`
         html,
         body {
           padding: 0;
@@ -217,7 +284,7 @@ export default function Home() {
         * {
           box-sizing: border-box;
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 }
