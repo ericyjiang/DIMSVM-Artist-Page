@@ -27,7 +27,6 @@
 
 .borderCircle {
   border-radius: 9999px;
-
 }
 
 .colorInherit {
@@ -62,11 +61,40 @@
 }
 
 .description{
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align:center;
   font-size: 23px;
-  font-family: 'Montserrat', sans-serif;
+}
+
+.h1title{
+  font-size: 58px;
+  margin-bottom: 0.5px;
+}
+
+.subTitle{
+  font-size: 18px;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Icons */
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.socials{
+  display: flex;
+  justify-content: space-around;
 }

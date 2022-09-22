@@ -18,22 +18,81 @@ export default function Home() {
       </Head>
 
       <main>
-        <Image
-          priority
-          src="/images/Duo.png"
-          className={utilStyles.borderCircle}
-          height={488}
-          width={488}
-        />
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <Image
+            priority
+            src="/images/Duo.png"
+            className={utilStyles.borderCircle}
+            height={288}
+            width={288}
+          />
+        </div>
         <p className={utilStyles.description}>
-          <h1> DIMSVM </h1>
-          <p>Producer & DJ duo</p>
+          <h1 className={utilStyles.h1title}> DIMSVM </h1>
+          <p className={utilStyles.subTitle}>Producer & DJ duo</p>
           <p>
             Pronunced as "dim sum", DIMSVM is a duo act from New York City
             specializing in multiple subgenres of Electronic Dance Music
             including Dubstep, Trap, House, and more.
           </p>
         </p>
+
+        <div className={utilStyles.socials}>
+          <a href="https://open.spotify.com/artist/06CnAdKDLvYsj5A8x8BjF7?si=l5AEjToMS9mMtvjMRf7UTQ">
+            <Image
+              priority
+              src="/images/SPOT.png"
+              className={utilStyles.borderCircle}
+              height={48}
+              width={48}
+            />
+          </a>
+
+          <a href="https://soundcloud.com/dimsvm">
+            <Image
+              priority
+              src="/images/SC.png"
+              className={utilStyles.borderCircle}
+              height={48}
+              width={48}
+            />
+          </a>
+
+          <a href="https://www.youtube.com/channel/UCWsAAtpwWOMxJjbZlOqOfQA">
+            <Image
+              priority
+              src="/images/YOU.png"
+              className={utilStyles.borderCircle}
+              height={48}
+              width={48}
+            />
+          </a>
+
+          <a href="https://www.facebook.com/dimsvm.music">
+            <Image
+              priority
+              src="/images/META.png"
+              className={utilStyles.borderCircle}
+              height={48}
+              width={48}
+            />
+          </a>
+
+          <a href="https://www.instagram.com/dimsvm.music/">
+            <Image
+              priority
+              src="/images/IG.png"
+              className={utilStyles.borderCircle}
+              height={48}
+              width={48}
+            />
+          </a>
+        </div>
 
         <div className="grid">
           <a className="card">
@@ -74,14 +133,11 @@ export default function Home() {
         </div>
       </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by <img src="/vercel.svg" alt="Vercel" className="logo" />
-        </a>
+      <footer className={utilStyles.footer}>
+        <Link href="/"> Home </Link>
+        <Link href="/posts/discography"> Music </Link>
+        <Link href="/posts/upcoming"> Events </Link>
+        <Link href="/posts/contact"> Contact </Link>
       </footer>
 
       {/* <style jsx>{`
