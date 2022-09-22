@@ -5,7 +5,7 @@ import Layout from "../../components/layout";
 
 export default function Discography(){
   return (
-      <div style={{flexDirection: 'row', alignItems: 'center'}}>
+      <div>
         <h3>Discography</h3>
         <iframe
             src="https://open.spotify.com/embed/artist/06CnAdKDLvYsj5A8x8BjF7?utm_source=generator&theme=0"
