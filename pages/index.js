@@ -22,17 +22,19 @@ export default function Home() {
           style={{
             display: "flex",
             justifyContent: "center",
+            margin: "20px",
           }}
         >
           <Image
             priority
             src="/images/Duo.png"
             className={utilStyles.borderCircle}
-            height={288}
-            width={288}
+            height={311.72}
+            width={300}
             unoptimized={true}
           />
         </div>
+
         <p className={utilStyles.description}>
           <h1 className={utilStyles.h1title}> DIMSVM </h1>
           <p className={utilStyles.subTitle}>Producer & DJ duo</p>
