@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <title>DIMSVM</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap"
           rel="stylesheet"
@@ -120,11 +120,19 @@ export default function Home() {
               <p> Contact for bookings </p>
             </Link>
           </a>
-
+          
           <a className="card">
             <Discography />
           </a>
-          
+
+          {/* <a className="card">
+            <Link href="/posts/discography">
+              <h3> Discography &rarr; </h3>
+            </Link>
+            <Link href="/posts/discography">
+              <p> Listen to your favorite tracks </p>
+            </Link>
+          </a> */}
 
           <a className="card">
             <Link href="/posts/about">
