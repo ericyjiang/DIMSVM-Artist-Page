@@ -102,6 +102,28 @@ export default function Home() {
           </a>
         </div>
 
+        <div>
+          <h2 className={utilStyles.landingDisco}> BOUNCE </h2>
+          <p> is out now! </p>
+        </div>
+
+        <div className={utilStyles.bounce}>
+          <Image
+            priority
+            src="/images/DIMSVM - Bounce artwork.jpeg"
+            height={326}
+            width={326}
+            unoptimized={true}
+          />
+
+          <a
+            href="https://open.spotify.com/track/4VGbriNa3s3tdRSEYn7dmn?si=74373ebf06f34fcc"
+            className={utilStyles.button}
+          >
+            <b> Listen on Spotify </b>
+          </a>
+        </div>
+
         <div className="grid">
           <a className="card">
             <Link href="/posts/upcoming">
@@ -120,10 +142,10 @@ export default function Home() {
               <p> Contact for bookings </p>
             </Link>
           </a>
-          
-          <a className="card">
+
+          {/* <a className="card">
             <Discography />
-          </a>
+          </a> */}
 
           {/* <a className="card">
             <Link href="/posts/discography">
