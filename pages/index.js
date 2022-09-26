@@ -121,9 +121,9 @@ export default function Home() {
             </Link>
           </a>
           
-          <a className="card">
+          {/* <a className="card">
             <Discography />
-          </a>
+          </a> */}
 
           {/* <a className="card">
             <Link href="/posts/discography">

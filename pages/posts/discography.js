@@ -1,49 +1,36 @@
-import Head from "next/head";
-import Link from "next/link";
+import Image from "next/image";
 import Layout from "../../components/layout";
+import MusicPlayer from "../../components/MusicPlayer";
+import utilStyles from "../../styles/utils.module.css";
+import { data } from "../data/data";
 
-
-export default function Discography(){
+export default function Discography() {
   return (
+    <Layout>
       <div>
-        <h3>Discography</h3>
-        <iframe
-            src="https://open.spotify.com/embed/artist/06CnAdKDLvYsj5A8x8BjF7?utm_source=generator&theme=0"
-            width="1000"
-            height="200"
-            frameBorder="0"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-            ></iframe>
-    </div>
-  )
+        {data.map((item, idx) => (
+          <div key={idx} >
+            <div className="song">
+              <div className="song-image">
+                <Image
+                  priority
+                  src={item.imgPath}
+                  unoptimized={true}
+                  height={150}
+                  width={150}
+                />
+              </div>
+              <div className="song-text">
+                <h1>{item.title}</h1>
+                <h4>{item.artist}</h4>
+                <h6>Released: {item.year}</h6>
+              </div>
+            </div>
+            
+          </div>
+        ))}
+      </div>
+      <MusicPlayer />
+    </Layout>
+  );
 }
-
-
-// export default function Discography() {
-//   return (
-//     <Layout>
-//       <Head>
-//         <title> Discography </title>
-//       </Head>
-//       <h1> Discography </h1>
-//       <div>
-//         <a href="https://soundcloud.com/dimsvm">SoundCloud</a>
-//       </div>
-//       <div style={{}}>
-//         <iframe
-//           src="https://open.spotify.com/embed/artist/06CnAdKDLvYsj5A8x8BjF7?utm_source=generator&theme=0"
-//           width="1000"
-//           height="200"
-//           frameBorder="0"
-//           allowfullscreen="No"
-//           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-//           loading="lazy"
-//         ></iframe>
-//       </div>
-//       <h2>
-//         <Link href="/"> Back to home </Link>
-//       </h2>
-//     </Layout>
-//   );
-// }
