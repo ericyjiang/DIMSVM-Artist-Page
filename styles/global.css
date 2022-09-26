@@ -7,6 +7,7 @@ body {
   font-size: 18px;
   color: white;
   background: linear-gradient(181.27deg, #0D0040 0%, #000106 100%);
+  text-align: center;
 }
 
 * {
