@@ -2,39 +2,35 @@ import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { PlayerButtons, CurrentSong } from "./PlayerButtons";
 
-const MusicPlayer = ({songs, currentSong, handleClick }) => {
-  const [isPlaying, setIsPlaying ] = useState(false);
-  const audioPlayer = useRef(null);
-
-  const handlePlayPause = () => {
-    setIsPlaying(!isPlaying);
-  }
+function Player({songs, currentSong, handleSkip, handleBack}) {
+  const audioElement = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
-    // if(isPlaying) audioPlayer.current.play();
-    // else audioPlayer.current.pause();
+    if (isPlaying) {
+      audioElement.current.play();
+    } else {
+      audioElement.current.pause();
+    }
   });
 
   return (
-    <div className="music-player">
-      {console.log(songs[currentSong].audio)}
-      {/* <audio 
-        src={songs[currentSong].audio}
-        ref={audioPlayer}
-      /> */}
-      <CurrentSong 
-        song={songs[currentSong]}
-      />
-      <audio
-        controls
-        src={songs[currentSong].audio}
-      />
-      {/* <PlayerButtons 
-        handlePlayPause={handlePlayPause}
-        handleClick={handleClick}
-      /> */}
-    </div>
+    <>
+      <div className="music-player"
+      >
+        <audio
+          src={songs[currentSong].audio}
+          ref={audioElement}
+        ></audio>
+        <CurrentSong song={songs[currentSong]} />
+        <PlayerButtons
+          isPlaying={isPlaying}
+          setIsPlaying={setIsPlaying}
+          handleBack={handleBack}
+          handleSkip={handleSkip}
+        />
+      </div>
+    </>
   );
-};
-
-export default MusicPlayer;
+}
+export default Player;
