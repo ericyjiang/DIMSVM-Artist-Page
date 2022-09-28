@@ -1,10 +1,17 @@
+import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 import Layout from "../../components/layout";
 import MusicPlayer from "../../components/MusicPlayer";
-import utilStyles from "../../styles/utils.module.css";
 import { data } from "../data/data";
 
 export default function Discography() {
+  const [currentSong, setCurrentSong ] = useState(0);
+
+  const handleClick = () => {
+    if(currentSong === data.length-1) setCurrentSong(0);
+    else setCurrentSong(currentSong + 1);
+  }
+
   return (
     <Layout>
       <div>
@@ -30,7 +37,11 @@ export default function Discography() {
           </div>
         ))}
       </div>
-      <MusicPlayer />
+      <MusicPlayer
+        songs = {data}
+        currentSong = {currentSong}
+        handleClick = {handleClick}
+      />
     </Layout>
   );
 }

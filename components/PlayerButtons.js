@@ -8,18 +8,18 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export function PlayerButtons({ isPlaying, setIsPlaying }) {
+export function PlayerButtons({ isPlaying, handlePlayPause, handleClick }) {
   return (
     <div>
-      <button className="skip-btn" onClick={() => {}}>
+      <button className="skip-btn" onClick={() => handleClick}>
         <FontAwesomeIcon icon={faBackward} />
       </button>
 
-      <button className="play-btn" onClick={() => {}}>
+      <button className="play-btn" onClick={() => handlePlayPause}>
         <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} />
       </button>
 
-      <button className="skip-btn" onClick={() => {}}>
+      <button className="skip-btn" onClick={() => handleClick}>
         <FontAwesomeIcon icon={faForward} />
       </button>
     </div>
@@ -29,19 +29,19 @@ export function PlayerButtons({ isPlaying, setIsPlaying }) {
 export function CurrentSong(props) {
   return (
     <div className="music-player--details">
-      <div className="details-img">
         <Image
           priority
-          className="details-img--image"
-          src={props.song.img_src}
+          className="song-image"
+          src={props.song.imgPath}
           alt={props.song.title}
+          width={300}
+          height={300}
         />
-      </div>
-      <div class="range"></div>
-      <div className="artist-info">
-        <h3 className="details-title">{props.song.title}</h3>
-        <h4 className="details-artist">{props.song.artist}</h4>
-        <div class="line"></div>
+      <div style={{color: 'black', textAlign:'center'}}>
+        <h1>{props.song.title}</h1>
+        <h4>{props.song.artist}</h4>
+        <h4>{props.song.year}</h4>
+        <div className="line"></div>
       </div>
     </div>
   );
