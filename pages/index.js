@@ -3,15 +3,16 @@ import Link from "next/link";
 import Image from "next/image";
 import utilStyles from "../styles/utils.module.css";
 import Layout from "../components/layout";
-import Discography from "./posts/discography";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
     <div className={utilStyles.container}>
+      <Header />
       <Head>
         <title>DIMSVM</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap"
           rel="stylesheet"
