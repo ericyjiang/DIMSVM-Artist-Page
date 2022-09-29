@@ -16,12 +16,11 @@ function Player({songs, currentSong, handleSkip, handleBack}) {
 
   return (
     <>
-      <div className="music-player"
-      >
+      <div className="music-player">
         <audio
           src={songs[currentSong].audio}
           ref={audioElement}
-        ></audio>
+        />
         <CurrentSong song={songs[currentSong]} />
         <PlayerButtons
           isPlaying={isPlaying}

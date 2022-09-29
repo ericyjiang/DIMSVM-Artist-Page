@@ -3,6 +3,8 @@ import Image from "next/image";
 import Layout from "../../components/layout";
 import MusicPlayer from "../../components/MusicPlayer";
 import { data } from "../data/data";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Discography() {
   const [currentSong, setCurrentSong] = useState(0);
@@ -33,10 +35,13 @@ export default function Discography() {
                     width={150}
                   />
                 </div>
-                <div className="song-text">
-                  <h1>{item.title}</h1>
-                  <h4>{item.artist}</h4>
-                  <h6>Released: {item.year}</h6>
+                <div className="song-row">
+                  <div style={{flexDirection: "column", marginLeft: "1rem"}}>
+                    <h1 style={{lineHeight: "0.2"}}>{item.title}</h1>
+                    <h5>{item.artist}</h5>
+                    <h6>Released: {item.year}</h6>
+                  </div>
+                  <FontAwesomeIcon icon={faPlay} style={{width: "15px", marginRight:"10px", alignSelf:"end", marginBottom:"15px"}} />
                 </div>
               </div>
             </div>

@@ -21,7 +21,7 @@ export function PlayerButtons({handleBack,handleSkip, setIsPlaying, isPlaying}) 
         onClick={() => setIsPlaying(!isPlaying)}
         className="music-player-btn-skipBack"
       >
-        <FontAwesomeIcon icon={isPlaying ? faPause : faPlay}/>
+        <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} style={{width: "20px", alignSelf: "center", marginLeft:"3px"}}/>
       </button>
       <button 
         onClick={() => handleSkip()}
@@ -36,19 +36,19 @@ export function PlayerButtons({handleBack,handleSkip, setIsPlaying, isPlaying}) 
 export function CurrentSong({ song }) {
   return (
     <div>
-      <div>
+      <div style={{paddingTop: "1rem", alignContent:"center"}}>
         <Image
           src={song.imgPath}
           alt={song.title}
-          width={275}
-          height={275}
+          width={225}
+          height={225}
           style={{
-            borderTopRightRadius: "1.25rem",
+            borderRadius: "20px",
           }}
         />
       </div>
-      <h1 className="details-title">{song.title}</h1>
-      <h4 className="details-artist">{song.artist}</h4>
+      <h1>{song.title}</h1>
+      <h4>{song.artist}</h4>
     </div>
   );
 }
