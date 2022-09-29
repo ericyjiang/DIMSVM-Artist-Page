@@ -28,3 +28,57 @@ img {
   display: block;
 }
 
+
+/* Discography -> Song Table */
+
+.song-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.song {
+  box-shadow: 0px 4px 32px rgba(186, 35, 189, 0.25);
+  width: 450px;
+  height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.song-image{
+  float: left;
+}
+
+.song-text {
+  margin-left: 175px;
+  line-height: 1.0em;
+}
+
+.song-text h4 {
+  color: #666;
+  line-height: 0.25em;
+}
+
+/* Player body */
+
+.music-player {
+  margin-right: auto;
+  margin-left: 3rem;
+  max-width: 30rem;
+  background-color: rgba(0,0,0, 0.4);
+  border-radius: 1.25rem;
+  text-align: center;
+  box-shadow: 0px 4px 32px rgba(186, 35, 189, 0.25);
+}
+
+.music-player-controls {
+  display: flex;
+}
+
+.music-player-btn-skipBack{
+  box-shadow: 0px 4px 32px rgba(186, 35, 189, 0.25);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%
+}
