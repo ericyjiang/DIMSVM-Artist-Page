@@ -167,7 +167,7 @@
 text-decoration: none;
 color:white;
 font-size: 16px;
-padding: 20px;
+padding: 18px;
 }
 
 /* Icons */
@@ -195,4 +195,23 @@ padding: 20px;
   border-bottom:1px solid #454545;
   height: 82px;
   width: 358px;
+}
+
+/* About */
+
+.aboutUs{
+  text-align: left;
+  padding: 4%;
+}
+
+.aboutUsHeading {
+  text-align: left;
+  padding: 4%;
+  font-size: 26px;
+  margin-bottom: -20px;
+}
+
+.aboutImages{
+  margin-top:-5px;
+  margin-bottom: -15px;
 }

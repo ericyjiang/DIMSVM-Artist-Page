@@ -71,14 +71,14 @@ export default function Footer() {
       </div>
 
       <div>
-        <Link href="/">
-          <a className={utilStyles.footerLinks}> Home </a>
-        </Link>
         <Link href="/posts/discography">
-          <a className={utilStyles.footerLinks}> Music </a>
+          <a className={utilStyles.footerLinks}>Music</a>
         </Link>
         <Link href="/posts/upcoming">
-          <a className={utilStyles.footerLinks}>Events </a>
+          <a className={utilStyles.footerLinks}>Events</a>
+        </Link>
+        <Link href="/posts/about">
+          <a className={utilStyles.footerLinks}>About Us</a>
         </Link>
         <Link href="/posts/contact">
           <a className={utilStyles.footerLinks}>Contact</a>
