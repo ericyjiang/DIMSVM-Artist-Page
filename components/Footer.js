@@ -6,12 +6,14 @@ export default function Footer() {
   return (
     <footer className={utilStyles.footer}>
       <div className={utilStyles.footerLogo}>
-        <Image
-          priority
-          src="/images/DIMSVM-Logo-White.png"
-          height={60}
-          width={138}
-        />
+        <Link href="/">
+          <Image
+            priority
+            src="/images/DIMSVM-Logo-White.png"
+            height={60}
+            width={138}
+          />
+        </Link>
       </div>
 
       <div className={utilStyles.footerSocials}>
