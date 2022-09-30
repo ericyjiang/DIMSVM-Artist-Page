@@ -122,6 +122,37 @@
   margin-top: -35px;
 }
 
+.upcomingEvent{
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0px 4px 32px rgba(186, 35, 189, 0.25);
+  border-radius: 8px;
+  width: 358px;
+  height: 361px;
+}
+
+.upcomingEventDescription {
+  text-align: left;
+  font-size: 16px;
+  margin-top: -130px;
+  margin-left: -15px;
+  /* padding-left: 15px;
+  padding-top: 10px; */
+}
+
+.pastEvent{
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0px 4px 32px rgba(186, 35, 189, 0.25);
+  border-radius: 8px;
+  width: 358px;
+  height: 129px;
+  margin: 8px;
+  text-align: left;
+}
+
+.eventPageName{
+  font-size: 32px;
+}
+
 .eventDescription{
   text-align: left;
   font-size: 16px;
