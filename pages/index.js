@@ -44,7 +44,7 @@ export default function Home() {
             <h1 className={utilStyles.h1title}>DIMSVM</h1>
             <p className={utilStyles.subTitle}>Producer & DJ duo</p>
             <p>
-              Pronunced as "dim sum", DIMSVM is a duo act from New York City
+              Pronounced as "dim sum", DIMSVM is a duo act from New York City
               specializing in multiple subgenres of Electronic Dance Music
               including Dubstep, Trap, House, and more.
             </p>
@@ -153,7 +153,7 @@ export default function Home() {
           </div>
 
           <div className={utilStyles.eventButton}>
-            <Link href="/posts/upcoming">
+            <Link href="/posts/events">
               <b>View All Events</b>
             </Link>
           </div>

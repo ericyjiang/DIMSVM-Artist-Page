@@ -74,7 +74,7 @@ export default function Footer() {
         <Link href="/posts/discography">
           <a className={utilStyles.footerLinks}>Music</a>
         </Link>
-        <Link href="/posts/upcoming">
+        <Link href="/posts/events">
           <a className={utilStyles.footerLinks}>Events</a>
         </Link>
         <Link href="/posts/about">
