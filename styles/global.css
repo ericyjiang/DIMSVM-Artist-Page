@@ -86,10 +86,13 @@ img {
 /* Header + Nav Styling */
 .header {
   display: flex;
+  z-index:999;
   position: relative;
+  top:0;
+  left:0;
   width: 100%;
-  height: 3rem;
   justify-content: space-between;
+  align-items: center;
   background-color: #000106;
 }
 
@@ -100,8 +103,6 @@ img {
   background-color:transparent
 }
 
-.navElements {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.navElements{
+  padding: 10px;
 }

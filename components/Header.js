@@ -37,9 +37,9 @@ const Header = () => {
                 src="/images/DIMSVM-Logo-White.png"
                 alt="logo"
                 width={80}
-                height={10}
+                height={30}
                 style={{
-                  alignSelf: "center",
+                  maxWidth: "100%"
                 }}
               />
               <div className="navElements">
