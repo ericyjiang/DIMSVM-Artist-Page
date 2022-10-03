@@ -9,22 +9,23 @@ const Sidebar = ({ isClicked, setIsClicked }) => {
     <div className="sidebar">
       <FontAwesomeIcon
         icon={faXmark}
-        size="sm"
+        width={20}
         onClick={() => setIsClicked(!isClicked)}
       />
-
-      <Link href="/posts/discography">
-        <a className={utilStyles.footerLinks}>Music</a>
-      </Link>
-      <Link href="/posts/upcoming">
-        <a className={utilStyles.footerLinks}>Events</a>
-      </Link>
-      <Link href="/posts/about">
-        <a className={utilStyles.footerLinks}>About</a>
-      </Link>
-      <Link href="/posts/contact">
-        <a className={utilStyles.footerLinks}>Contact</a>
-      </Link>
+      <div className="navContainer">
+        <Link href="/posts/discography">
+          <a className="navElements">Music</a>
+        </Link>
+        <Link href="/posts/upcoming">
+          <a className="navElements">Events</a>
+        </Link>
+        <Link href="/posts/about">
+          <a className="navElements">About</a>
+        </Link>
+        <Link href="/posts/contact">
+          <a className="navElements">Contact</a>
+        </Link>
+      </div>
     </div>
   );
 };
