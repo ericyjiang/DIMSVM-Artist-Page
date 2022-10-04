@@ -135,8 +135,6 @@
   font-size: 16px;
   margin-top: -130px;
   margin-left: -15px;
-  /* padding-left: 15px;
-  padding-top: 10px; */
 }
 
 .pastEvent{
@@ -147,6 +145,11 @@
   height: 129px;
   margin: 8px;
   text-align: left;
+}
+
+.pastEventDescription{
+  margin-left: 14px;
+  font-size: 16px;
 }
 
 .eventPageName{
@@ -179,6 +182,19 @@
 .eventName{
   text-align: left;
   font-size: 32px;
+}
+
+.eventTitleName{
+  font-size: 32px;
+  margin-left: -145px;
+  margin-bottom: -30px;
+}
+
+.eventTitleNameTwo{
+  font-size: 32px;
+  margin-left: -128px;
+  margin-bottom: -30px;
+  margin-top: -15px;
 }
 
 .footer{

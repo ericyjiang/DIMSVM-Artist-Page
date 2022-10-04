@@ -20,11 +20,10 @@ export default function Events() {
           rel="stylesheet"
         />
       </Head>
-      <h2>
-        <Link href="/"> Back to home </Link>
-      </h2>
 
-      <h2>Next Event</h2>
+      <div className={utilStyles.eventTitleName}>
+        <h3>Next Event</h3>
+      </div>
 
       <div className={utilStyles.upcomingEvent}>
         <Image
@@ -44,30 +43,38 @@ export default function Events() {
         </p>
       </div>
 
-      <h2> Past Events</h2>
-
-      <div className={utilStyles.pastEvent}>
-        <a className={utilStyles.eventPageName}>Vibestream</a>
-        <p>
-          Jul. 03, 2020 <br />
-          Virtual Livestream Event
-        </p>
+      <div className={utilStyles.eventTitleNameTwo}>
+        <h3>Past Events</h3>
       </div>
 
       <div className={utilStyles.pastEvent}>
-        <a className={utilStyles.eventPageName}>Topsaa</a>
-        <p>
-          Feb. 15, 2020 <br />
-          41-14 162nd St, Queens, NY 11358
-        </p>
+        <div className={utilStyles.pastEventDescription}>
+          <a className={utilStyles.eventPageName}>Vibestream</a>
+          <p>
+            Jul. 03, 2020 <br />
+            Virtual Livestream Event
+          </p>
+        </div>
       </div>
 
       <div className={utilStyles.pastEvent}>
-        <a className={utilStyles.eventPageName}>BASSMENT</a>
-        <p>
-          Jun. 28, 2019 <br />
-          137-74 Northern Blvd, Flushing, NY 11354
-        </p>
+        <div className={utilStyles.pastEventDescription}>
+          <a className={utilStyles.eventPageName}>Topsaa</a>
+          <p>
+            Feb. 15, 2020 <br />
+            41-14 162nd St, Queens, NY 11358
+          </p>
+        </div>
+      </div>
+
+      <div className={utilStyles.pastEvent}>
+        <div className={utilStyles.pastEventDescription}>
+          <a className={utilStyles.eventPageName}>BASSMENT</a>
+          <p>
+            Jun. 28, 2019 <br />
+            137-74 Northern Blvd, Flushing, NY 11354
+          </p>
+        </div>
       </div>
     </Layout>
   );
