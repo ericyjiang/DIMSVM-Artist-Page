@@ -20,9 +20,6 @@ export default function About() {
           rel="stylesheet"
         />
       </Head>
-      <h2>
-        <Link href="/"> Back to home </Link>
-      </h2>
 
       <div>
         <div className={utilStyles.aboutUsHeading}>

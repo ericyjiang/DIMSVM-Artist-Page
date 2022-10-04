@@ -40,7 +40,7 @@ export default function Home() {
             />
           </div>
 
-          <p className={utilStyles.description}>
+          <div className={utilStyles.description}>
             <h1 className={utilStyles.h1title}>DIMSVM</h1>
             <p className={utilStyles.subTitle}>Producer & DJ duo</p>
             <p>
@@ -48,7 +48,7 @@ export default function Home() {
               specializing in multiple subgenres of Electronic Dance Music
               including Dubstep, Trap, House, and more.
             </p>
-          </p>
+          </div>
 
           <div className={utilStyles.socials}>
             <a href="https://open.spotify.com/artist/06CnAdKDLvYsj5A8x8BjF7?si=l5AEjToMS9mMtvjMRf7UTQ">
