@@ -20,11 +20,8 @@ export default function Events() {
           rel="stylesheet"
         />
       </Head>
-      <h2>
-        <Link href="/"> Back to home </Link>
-      </h2>
 
-      <div className={utilStyles.eventName}>
+      <div className={utilStyles.eventTitleName}>
         <h3>Next Event</h3>
       </div>
 
@@ -46,8 +43,8 @@ export default function Events() {
         </p>
       </div>
 
-      <div className={utilStyles.eventName}>
-        <h2> Past Events</h2>
+      <div className={utilStyles.eventTitleNameTwo}>
+        <h3>Past Events</h3>
       </div>
 
       <div className={utilStyles.pastEvent}>
