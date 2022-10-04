@@ -14,7 +14,7 @@
  * Eric Jiang - [GitHub](https://github.com/ericyjiang) :computer: | [LinkedIn](https://www.linkedin.com/in/ericyjiang/) :handshake:
  * David Huang - [GitHub](https://github.com/dvebino) :computer: | [LinkedIn](https://www.linkedin.com/in/dhuang24/) :handshake:
  
-## UX Designers
+## UX Designers :black_nib:
   * Alfonso Libron - [Portfolio](https://alfonsolibron.wixsite.com/mysite?fbclid=IwAR30XjzZZUxoPHlrFQIQ21rkH6YcUw_lvFW-04aOOE20CrHWn8K5Y7RK83I) :computer: | [LinkedIn](https://www.linkedin.com/in/alfonso-l-08198a160/) :handshake:
  
 ## Features
