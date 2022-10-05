@@ -2,8 +2,6 @@
 
 <p align='center'> A modern web app created for a local DJ duo </p>
 
-<p align='center'> <img src='public/images/DIMSVM-Logo-White.png' width=165; height=75;> </p>
-
 <p align='center'> <img src='public/images/landing_page(iPhone 12 Pro).png' width=300; height=1500;> </p>
 
 <p align='center'> DIMSVM's artist page was built using JavaScript, <a href="https://reactjs.org/">React.js</a>, and <a href='https://nextjs.org/'> Next.js </a>
