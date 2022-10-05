@@ -4,7 +4,7 @@
 
 <p align='center'> <img src='https://i.ibb.co/Lx7mzTs/DIMSVM-2021-White-transparent-3.png' width=165; height=75;> </p>
 
-<p align='center'> DIMSVM's artist page was built using Javascript and <a href='https://nextjs.org/'> Next.js </a>
+<p align='center'> DIMSVM's artist page was built using JavaScript, <a href="https://reactjs.org/">React.js</a>, and <a href='https://nextjs.org/'> Next.js </a>
 
 
 ## Deployed Site :desktop_computer:
