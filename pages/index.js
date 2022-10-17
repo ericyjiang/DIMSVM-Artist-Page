@@ -139,7 +139,7 @@ export default function Home() {
               priority
               src="/images/gossip8.png"
               height={232}
-              width={358}
+              width={370}
               unoptimized={true}
             />
           </div>
